@@ -1,0 +1,71 @@
+public class Gioco {
+
+
+    public static void main (String args [])
+    {
+        PaintRect();
+
+    }
+
+    public static void PaintRect() {
+
+        g.drawRect(100,100,300,300);
+        g.drawLine(100,100,100,100);
+        g.setBackground(Color.BLACK);
+        System.out.println("Trasut");
+        credits.setText("Kitebbiv");
+        credits.setBackground(null);
+        credits.setEditable(false);
+        credits.setFocusable(false);
+        credits.setBounds(0,0,100,100);
+        credits.setForeground(Color.BLACK);
+        panel.add(credits);
+        g.getPaint();
+    }
+    
+    #triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+<div id="triangle-up"></div>
+
+import javafx.application.Application; 
+import javafx.scene.Group; 
+import javafx.scene.Scene; 
+import javafx.stage.Stage; 
+import javafx.scene.shape.Sphere; 
+         
+public class SphereExample extends Application { 
+   @Override 
+   public void start(Stage stage) { 
+      //Drawing a Sphere  
+      Sphere sphere = new Sphere();  
+      
+      //Setting the properties of the Sphere 
+      sphere.setRadius(50.0);   
+       
+      sphere.setTranslateX(200); 
+      sphere.setTranslateY(150);      
+       
+      //Creating a Group object  
+      Group root = new Group(sphere); 
+         
+      //Creating a scene object 
+      Scene scene = new Scene(root, 600, 300);  
+      
+      //Setting title to the Stage 
+      stage.setTitle("Drawing a Sphere - draw fill");
+      
+      //Adding scene to the stage 
+      stage.setScene(scene); 
+         
+      //Displaying the contents of the stage 
+      stage.show(); 
+   }      
+   public static void main(String args[]){ 
+      launch(args); 
+   } 
+}
